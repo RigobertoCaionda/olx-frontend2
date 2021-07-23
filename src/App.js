@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 
-function App() {
+const Page = () => {
   const [nome, setNome] = useState('Sicrano');
   const handleButton = ()=>{
   setNome('Rigoberto');
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default Page;
