@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 
 const Page = () => {
-  const [nome, setNome] = useState('Sicrano');
+  const [nome, setNome] = useState('Beltrano');
   const handleButton = ()=>{
   setNome('Rigoberto');
 }
