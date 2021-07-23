@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import {connect} from 'react-redux';
+import {BrowserRouter} from 'react-router-dom';
+import Routes from './Routes';
 import './App.css';
 
 const Page = (props) => {
@@ -8,10 +10,11 @@ const Page = (props) => {
   setNome('Rigoberto');
 }
   return (
-    <>
-      <div>Oi, tudo bem {nome}? </div>
-      <button onClick={handleButton}>Mudar o nome</button>
-      </>
+    <BrowserRouter>
+        <div>Oi, tudo bem {nome}? </div>
+        <button onClick={handleButton}>Mudar o nome</button>
+        <Routes />
+    </BrowserRouter>
   );
 }
 
