@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
+import {connect} from 'react-redux';
 import './App.css';
 
-const Page = () => {
+const Page = (props) => {
   const [nome, setNome] = useState('Beltrano');
   const handleButton = ()=>{
   setNome('Rigoberto');
@@ -14,4 +15,15 @@ const Page = () => {
   );
 }
 
-export default Page;
+const mapStateToProps = (state) =>{
+  return {
+
+  };
+}
+
+const mapDispatchToProps = (dispatch) =>{
+  return {
+
+  };
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Page);
