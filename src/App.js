@@ -1,19 +1,17 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {connect} from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
 import Routes from './Routes';
+import Header from './components/partials/Header';
+import Footer from './components/partials/Footer';
 import './App.css';
 
 const Page = (props) => {
-  const [nome, setNome] = useState('Beltrano');
-  const handleButton = ()=>{
-  setNome('Rigoberto');
-}
   return (
     <BrowserRouter>
-        <div>Oi, tudo bem {nome}? </div>
-        <button onClick={handleButton}>Mudar o nome</button>
+        <Header />
         <Routes />
+        <Footer />
     </BrowserRouter>
   );
 }
