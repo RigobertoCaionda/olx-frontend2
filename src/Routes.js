@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 import Login from './pages/Login';
+import SignUp from './pages/Signup';
 const Routes = () =>{
 	return(
 			<Switch>
@@ -15,6 +16,9 @@ const Routes = () =>{
 				</Route>
 				<Route exact path="/signin">
 					<Login />
+				</Route>
+				<Route exact path="/signup">
+					<SignUp />
 				</Route>
 				<Route path="">
 					<NotFound />
