@@ -19,7 +19,7 @@ const Page = () => {
 			setStateList(sList);
 		}
 		getStates();
-	},[]);
+	},[api]);
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		setDisabled(true);
