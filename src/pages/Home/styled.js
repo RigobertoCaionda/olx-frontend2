@@ -12,6 +12,21 @@ export const PageContainer = styled.div`
 	width: 1000px;
 	margin:auto;
 	height: 100%;
+	h2 {
+		font-size: 20px;
+	}
+	a {
+		color: #000;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	.list {
+		display: flex;
+		flex-wrap: wrap;
+		.aditem {
+			width: 25%;
+		}
+	}
 	.categoryList {
 		margin-top: 20px;
 		display: flex;
